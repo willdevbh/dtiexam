@@ -66,6 +66,6 @@ Substitui inteiramente os dados do recurso exceto o {id},
 Se não existir recurso com esse {id} ele faz a inserção do ítem gerando um novo {id},
 desconsiderando o informado e utilizando o sequencial interno.
 
-**PATCH /produtos/{id}***
+**PATCH /produtos/{id}**
 Edita atributos do recurso de identificador {id} de acordo com o que é enviado
 favorecendo alterações parciais economizando tráfego de rede
