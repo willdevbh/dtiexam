@@ -2,8 +2,8 @@
 
 Projeto criado com o intuito de demonstração de empenho em construir uma API Rest Básica para a Entidade produto.
 A API foi desenvolvida em Java Utilizando o NetBeans com uso de Spring Boot como pode ser visto no arquivo POM do projeto
-Como está em desenvolvimento a propriedade "spring.jpa.hibernate.ddl-auto" está como create-drop mas pode ser mudada para Update
-para que os dados não sejam perdidos.
+Como está em desenvolvimento a propriedade "spring.jpa.hibernate.ddl-auto" está como **create-drop** mas pode ser mudada para **update**
+para que os dados não sejam perdidos ( Arquivo application.properties ).
 
 Foi utilizado Banco de Dados SQL Server 2017
 
@@ -72,11 +72,11 @@ favorecendo alterações parciais economizando tráfego de rede
 
 ### Continuidade
 
-Nesse primeiro Grande Commit não irão o tratamento de exceções o quais apesar de extremamente importantes
+Nesse primeiro Grande Commit não irão tratamentos de exceções os quais apesar de extremamente importantes
 não foram cobrados na especificação. 
 
-Mesmo assim, com tempo irei implementa-los visando uma melhor experiência no consumo desta API seguindos os padrões da web para
-retornos quando não forem passados os devidos parâmetros por exemplo com o HTTP_STATUS 400 devidamente descrito o que há de errado.
+Mesmo assim, com tempo irei implementa-los visando uma melhor experiência no consumo desta API seguindo os padrões da web para
+retornos quando não forem passados os devidos parâmetros por exemplo com o HTTP_STATUS 400 descrevendo devidamente o que houve de errado.
 
 Testes Unitários também enriquecerão essa implementação agilizando o processo de verificação posterior afim de não permitir
-a passagem de erros
+o envio de código quebrado.
