@@ -1,7 +1,8 @@
 # DTI Exam
 
 Projeto criado com o intuito de demonstração de empenho em construir uma API Rest Básica para a Entidade produto.
-A API foi desenvolvida em Java Utilizando o NetBeans com uso de Spring Boot como pode ser visto no arquivo POM do projeto
+A API foi desenvolvida em Java Utilizando o NetBeans com uso de Spring Boot como pode ser visto no arquivo POM do projeto.
+
 Como está em desenvolvimento a propriedade "spring.jpa.hibernate.ddl-auto" está como **create-drop** mas pode ser mudada para **update**
 para que os dados não sejam perdidos ( Arquivo application.properties ).
 
