@@ -28,7 +28,12 @@ CREATE TABLE [dbo].[produtos](
 PRIMARY KEY CLUSTERED 
 (
   [cd_produto] ASC
-)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+)WITH (
+  PAD_INDEX = OFF, 
+  STATISTICS_NORECOMPUTE = OFF, 
+  IGNORE_DUP_KEY = OFF, 
+  ALLOW_ROW_LOCKS = ON, 
+  ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
 ```
@@ -66,9 +71,30 @@ Substitui inteiramente os dados do recurso exceto o {id},
 Se não existir recurso com esse {id} ele faz a inserção do ítem gerando um novo {id},
 desconsiderando o informado e utilizando o sequencial interno.
 
+Nesse caso deve ser passado no JSON o cdProduto também
+para que seja feita a correta atualização da seguinte maneira:
+
+```yaml
+{
+  "cdProduto": 1,
+  "nmProduto": "Mouse Optico Razer 3000",
+  "qtProduto": 20,
+  "vlrProdC": 7500
+}
+```
+
 **PATCH /produtos/{id}**
 Edita atributos do recurso de identificador {id} de acordo com o que é enviado
-favorecendo alterações parciais economizando tráfego de rede
+favorecendo alterações parciais economizando tráfego de rede.
+
+Como a intenção é a atualização de partes do recurso pode ser enviado somente
+um único atríbuto da seguinte forma:
+
+```yaml
+{
+  "vlrProdC": 7990
+}
+```
 
 ### Continuidade
 
