@@ -69,3 +69,14 @@ desconsiderando o informado e utilizando o sequencial interno.
 **PATCH /produtos/{id}**
 Edita atributos do recurso de identificador {id} de acordo com o que é enviado
 favorecendo alterações parciais economizando tráfego de rede
+
+### Continuidade
+
+Nesse primeiro Grande Commit não irão o tratamento de exceções o quais apesar de extremamente importantes
+não foram cobrados na especificação. 
+
+Mesmo assim, com tempo irei implementa-los visando uma melhor experiência no consumo desta API seguindos os padrões da web para
+retornos quando não forem passados os devidos parâmetros por exemplo com o HTTP_STATUS 400 devidamente descrito o que há de errado.
+
+Testes Unitários também enriquecerão essa implementação agilizando o processo de verificação posterior afim de não permitir
+a passagem de erros
