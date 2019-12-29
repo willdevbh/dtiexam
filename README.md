@@ -21,10 +21,10 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[produtos](
-	[cd_produto] [int] NOT NULL,
-	[nm_produto] [varchar](255) NOT NULL,
-	[qt_produto] [int] NOT NULL,
-	[vlr_prodc] [int] NOT NULL,
+  [cd_produto] [int] NOT NULL,
+  [nm_produto] [varchar](255) NOT NULL,
+  [qt_produto] [int] NOT NULL,
+  [vlr_prodc] [int] NOT NULL,
 PRIMARY KEY CLUSTERED 
 (
 	[cd_produto] ASC
@@ -55,9 +55,9 @@ Insere um produto seguindo a seguinte estrutura JSON
 
 ```yaml
 {
-	"nmProduto": "Mouse Optico Razer 3000",
-	"qtProduto": 20,
-	"vlrProdC": 7500
+  "nmProduto": "Mouse Optico Razer 3000",
+  "qtProduto": 20,
+  "vlrProdC": 7500
 }
 ```
 
